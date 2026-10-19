@@ -21,9 +21,9 @@
 #### ✅ Recently Merged Upstream Contributions (6 Merged PRs)
 - **[StellarCanary/Protocol-Canary#570](https://github.com/StellarCanary/Protocol-Canary/pull/570)** — `feat(canary-rpc): support the getHealth RPC method` *(Merged)*
 - **[xaviercallens/HiveMind#10](https://github.com/xaviercallens/HiveMind/pull/10)** — `feat(m5): add native steam_api64 bridge and Season 2 HF domain missions (HM-M5-01/02)` *(Merged)*
-- **[xaviercallens/HiveMind#9](https://github.com/xaviercallens/HiveMind/pull/9)** — `feat(m1): add AsyncQUICGeoRingTransport with 0-RTT resumption and WebSocket fallback (HM-M1-01)` *(Merged)*
-- **[xaviercallens/HiveMind#8](https://github.com/xaviercallens/HiveMind/pull/8)** — `feat(m3): add Triton float8_e4m3fn kernel and causal tree-attention mask (HM-M3-01)` *(Merged)*
 - **[xaviercallens/HiveMind#7](https://github.com/xaviercallens/HiveMind/pull/7)** — `feat(m2): add double-buffered CUDA stream lookahead prefetcher (HM-M2-01)` *(Merged)*
+- **[xaviercallens/HiveMind#8](https://github.com/xaviercallens/HiveMind/pull/8)** — `feat(m3): add Triton float8_e4m3fn kernel and causal tree-attention mask (HM-M3-01)` *(Merged)*
+- **[xaviercallens/HiveMind#9](https://github.com/xaviercallens/HiveMind/pull/9)** — `feat(m1): add AsyncQUICGeoRingTransport with 0-RTT resumption and WebSocket fallback (HM-M1-01)` *(Merged)*
 - **[xaviercallens/HiveMind#6](https://github.com/xaviercallens/HiveMind/pull/6)** — `feat(m4): support SSE streaming on /v1/chat/completions (HM-M4-01)` *(Merged)*
 
 ---
