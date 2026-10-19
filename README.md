@@ -18,7 +18,7 @@
 
 ---
 
-#### ✅ Recently Merged Upstream Contributions (11 Merged PRs)
+#### ✅ Recently Merged Upstream Contributions (12 Merged PRs)
 - **[StellarCanary/Protocol-Canary#570](https://github.com/StellarCanary/Protocol-Canary/pull/570)** — `feat(canary-rpc): support the getHealth RPC method` *(Merged)*
 - **[xaviercallens/HiveMind#10](https://github.com/xaviercallens/HiveMind/pull/10)** — `feat(m5): add native steam_api64 bridge and Season 2 HF domain missions (HM-M5-01/02)` *(Merged)*
 - **[xaviercallens/HiveMind#7](https://github.com/xaviercallens/HiveMind/pull/7)** — `feat(m2): add double-buffered CUDA stream lookahead prefetcher (HM-M2-01)` *(Merged)*
@@ -30,6 +30,7 @@
 - **[xaviercallens/HiveMind#23](https://github.com/xaviercallens/HiveMind/pull/23)** — `feat(swarm): add Triton INT4 + FP8 fused MoE router kernel & benchmark (#15)` *(Merged)*
 - **[xaviercallens/HiveMind#24](https://github.com/xaviercallens/HiveMind/pull/24)** — `feat(game): add Season 3 campaign missions (9-12) & WebGL 3D Geo-Ring HUD (#16)` *(Merged)*
 - **[xaviercallens/HiveMind#25](https://github.com/xaviercallens/HiveMind/pull/25)** — `feat(moe): add Season 3 domain expert LoRA adapters and Top-k FP8 CAS registry (#17)` *(Merged)*
+- **[xaviercallens/HiveMind#33](https://github.com/xaviercallens/HiveMind/pull/33)** — `feat(season4): Season 4 bounties HM-S4-01 through HM-S4-06` *(Merged)*
 
 ---
 
