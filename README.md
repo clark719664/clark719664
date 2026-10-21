@@ -41,6 +41,8 @@ Free apps that get your PC and your TVs working together, published at **[payhip
 
 Each one is a one-click Windows installer that needs no administrator rights and bundles what it needs (and a Linux tarball with a one-command install and optional systemd service), with SHA-256 checksums and the corresponding source for bundled GPL tools published on every release. Tested by me on TVs on my own network. See the [screenshots and downloads](https://github.com/clark719664/pc-tv-apps#screenshots).
 
+They're free with no ads. If they're useful to you, **[a donation from $1](https://payhip.com/b/Wn9fE)** keeps them that way, and an approved donor message scrolls on every app's home screen ([how it works](https://github.com/clark719664/pc-tv-apps#keep-it-free)).
+
 ---
 
 #### 🛠️ Stack
