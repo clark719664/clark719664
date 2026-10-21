@@ -8,7 +8,7 @@
 
 #### 🧠 Distributed ML infrastructure: [xaviercallens/HiveMind](https://github.com/xaviercallens/HiveMind)
 
-Decentralized LoRA training over a QUIC "Geo-Ring". 15 of my PRs are merged there, and I co-own several of its subsystems.
+Decentralized LoRA training over a QUIC "Geo-Ring". 15 of my PRs are merged there, and I have write access to the repo.
 
 - **Transport:** async QUIC with 0-RTT resumption and WebSocket fallback ([#9](https://github.com/xaviercallens/HiveMind/pull/9)), multi-node WAN NAT traversal with STUN/TURN and UDP hole punching ([#22](https://github.com/xaviercallens/HiveMind/pull/22)), then a real QUIC 0-RTT and STUN/TURN implementation ([#40](https://github.com/xaviercallens/HiveMind/pull/40)).
 - **GPU kernels:** Triton `float8_e4m3fn` kernel and causal tree-attention mask ([#8](https://github.com/xaviercallens/HiveMind/pull/8)), INT4 + FP8 fused MoE router kernel with a benchmark ([#23](https://github.com/xaviercallens/HiveMind/pull/23)), double-buffered CUDA stream prefetcher ([#7](https://github.com/xaviercallens/HiveMind/pull/7)).
@@ -36,10 +36,10 @@ I fix the gap between what a project claims and what its code does: an astrophys
 
 Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)**:
 
-- **PC Cast Pro:** a TV remote, casting from any link, your PC's video library, multi-screen grids and live TV, all in one app.
+- **PC Cast Pro:** a TV remote, casting from any link, your PC's video library and multi-screen grids, all in one app.
 - **PC Cast Lite:** casting only. **PC TV Remote:** the remote only.
 
-Each one ships as an offline one-click installer with everything included (frozen Python, Chromium, FFmpeg/FFprobe, ADB), with signed-package provenance and a GPL source pack. Every installer is tested by installing, running, uninstalling and reinstalling it on Windows before release.
+Each one is a one-click installer that needs no administrator rights and bundles what it needs, with SHA-256 checksums and the corresponding source for bundled GPL tools published on every release. Tested by me on TVs on my own network. See the [screenshots and downloads](https://github.com/clark719664/pc-tv-apps#screenshots).
 
 ---
 
