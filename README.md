@@ -2,7 +2,7 @@
 
 **Systems engineer: Rust, Stellar/Soroban, distributed ML infrastructure and Lean 4 formal verification.** I ship working code with tests, and I don't let a claim stand that the code can't back up.
 
-**16 merged upstream PRs** · **Lean 4 proofs merged upstream** · **3 shipped Windows apps**
+**16 merged upstream PRs** · **Lean 4 proofs merged upstream** · **4 shipped apps for Windows and Linux**
 
 ---
 
@@ -32,14 +32,14 @@ I fix the gap between what a project claims and what its code does: an astrophys
 
 ---
 
-#### 📺 Shipped products: IN3RT1A apps for Windows
+#### 📺 Shipped products: IN3RT1A apps for Windows and Linux
 
-Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)**:
+Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers and Linux builds on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)**:
 
-- **PC Cast Pro:** a TV remote, casting from any link, your PC's video library and multi-screen grids, all in one app.
-- **PC Cast Lite:** casting only. **PC TV Remote:** the remote only.
+- **PC Cast Pro:** a TV remote, casting from any link or embedded player, multicast to many TVs at once, your PC's video library, multi-screen grids and free live TV, all in one app.
+- **PC Cast Lite:** casting only. **PC TV Live:** free live TV by country with a guide, built on a documented legal-source filter. **PC TV Remote:** the remote only.
 
-Each one is a one-click installer that needs no administrator rights and bundles what it needs, with SHA-256 checksums and the corresponding source for bundled GPL tools published on every release. Tested by me on TVs on my own network. See the [screenshots and downloads](https://github.com/clark719664/pc-tv-apps#screenshots).
+Each one is a one-click Windows installer that needs no administrator rights and bundles what it needs (and a Linux tarball with a one-command install and optional systemd service), with SHA-256 checksums and the corresponding source for bundled GPL tools published on every release. Tested by me on TVs on my own network. See the [screenshots and downloads](https://github.com/clark719664/pc-tv-apps#screenshots).
 
 ---
 
