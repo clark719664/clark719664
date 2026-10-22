@@ -21,6 +21,7 @@
 | **Standing on HiveMind** | Named **code owner** for 11 subsystem paths and listed maintainer-track co-owner (*"Grandmaster Core & Formal Architect"*) in [GOVERNANCE.md](https://github.com/xaviercallens/HiveMind/blob/main/GOVERNANCE.md) |
 | **Formal verification** | Lean 4 proofs merged upstream; the spec now carries **77 machine-checked theorems** (0 `sorry`, 0 user axioms, audited in CI) |
 | **Shipped products** | **4 desktop apps** for Windows and Linux, released with checksums and bundled-tool sources on every build |
+| **In the browser** | [Lucent](https://clark719664.github.io/lucent/), a GPU path tracer, and [Synapse](https://clark719664.github.io/synapse/), an OpenTelemetry trace explorer, both live on GitHub Pages |
 | **Specialities** | QUIC 0-RTT · STUN/TURN · Mixture-of-Experts routing · FP8/INT4 kernels · error-feedback compression · Soroban smart contracts · Unreal 5 / Godot 4 |
 
 ---
@@ -46,11 +47,18 @@ An open-source framework that trains a community-owned Sparse Mixture-of-Experts
 
 ### 📺 Shipped products — IN3RT1A apps for Windows and Linux
 
-Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers and Linux builds on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)**.
+Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers and Linux builds on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)** and a home page at **[clark719664.github.io/pc-tv-apps](https://clark719664.github.io/pc-tv-apps/)**.
 
 - **PC Cast Pro:** TV remote, casting from any link or embedded player, multicast to many TVs at once, your PC's video library, multi-screen grids and free live TV in one app.
 - **PC Cast Lite:** the casting only. **PC TV Live:** free live TV by country with a guide, built on a documented legal-source filter. **PC TV Remote:** the remote only.
 - One-click Windows installers with no administrator rights needed, Linux tarballs with a one-command install and optional systemd service, SHA-256 checksums and the corresponding source for bundled GPL tools on every [release](https://github.com/clark719664/pc-tv-apps/releases/latest). No ads; [donations from $1](https://payhip.com/b/Wn9fE) keep them free.
+
+### 🌐 Live in the browser — Lucent and Synapse
+
+Two zero-dependency TypeScript + WebGL2 apps with strict types, lint, tests and a GitHub Pages deploy in CI. Open them and they run, no install.
+
+- **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Next-event estimation with multiple importance sampling, a GGX microfacet BSDF with visible-normal sampling, a thin-lens camera you focus by clicking, and a binned-SAH BVH built in TypeScript and traversed in GLSL. About 24 kB gzipped.
+- **[Synapse](https://github.com/clark719664/synapse)** ([live demo](https://clark719664.github.io/synapse/)): a zero-backend OpenTelemetry trace explorer. A live service map with requests flowing as particles, a span waterfall, import of OTLP/JSON, Jaeger and Zipkin traces, and a seeded 17-service simulator with four injectable incidents. About 21 kB gzipped.
 
 ### ⭐ Stellar & Soroban
 
