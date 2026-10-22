@@ -17,11 +17,11 @@
 
 | | |
 |---|---|
-| **Upstream pull requests** | **16 merged** (15 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570)) and **16 more in review** |
+| **Upstream pull requests** | **32 merged** (30 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570), 1 on [Credence-Contracts](https://github.com/CredenceOrg/Credence-Contracts/pull/1636)) and **5 more in review** |
 | **Standing on HiveMind** | Named **code owner** for 11 subsystem paths and listed maintainer-track co-owner (*"Grandmaster Core & Formal Architect"*) in [GOVERNANCE.md](https://github.com/xaviercallens/HiveMind/blob/main/GOVERNANCE.md) |
 | **Formal verification** | Lean 4 proofs merged upstream; the spec now carries **77 machine-checked theorems** (0 `sorry`, 0 user axioms, audited in CI) |
 | **Shipped products** | **4 desktop apps** for Windows and Linux, released with checksums and bundled-tool sources on every build |
-| **In the browser** | [Lucent](https://clark719664.github.io/lucent/), a GPU path tracer, and [Synapse](https://clark719664.github.io/synapse/), an OpenTelemetry trace explorer, both live on GitHub Pages |
+| **In the browser** | [Lucent](https://clark719664.github.io/lucent/), a GPU path tracer, and [Synapse](https://clark719664.github.io/synapse/), a trace explorer that watches every Wikimedia edit live, both live on GitHub Pages |
 | **Specialities** | QUIC 0-RTT · STUN/TURN · Mixture-of-Experts routing · FP8/INT4 kernels · error-feedback compression · Soroban smart contracts · Unreal 5 / Godot 4 |
 
 ---
@@ -34,7 +34,7 @@ An open-source framework that trains a community-owned Sparse Mixture-of-Experts
 
 - **Transport:** async QUIC with 0-RTT resumption and WebSocket fallback ([#9](https://github.com/xaviercallens/HiveMind/pull/9)) → multi-node WAN NAT traversal with STUN/TURN and UDP hole-punching ([#22](https://github.com/xaviercallens/HiveMind/pull/22)) → a real QUIC 0-RTT + STUN/TURN implementation with live loopback tests ([#40](https://github.com/xaviercallens/HiveMind/pull/40)).
 - **GPU kernels:** Triton `float8_e4m3fn` kernel and causal tree-attention mask ([#8](https://github.com/xaviercallens/HiveMind/pull/8)); INT4 + FP8 fused MoE router kernel with a benchmark ([#23](https://github.com/xaviercallens/HiveMind/pull/23)); double-buffered CUDA-stream expert prefetcher ([#7](https://github.com/xaviercallens/HiveMind/pull/7)).
-- **Routing & compression (in review):** a 128-expert three-tier hierarchical router, 16 gating inner products per token instead of 128 ([#71](https://github.com/xaviercallens/HiveMind/pull/71)); token-tree speculative expert prefetch with a measured hit rate ([#75](https://github.com/xaviercallens/HiveMind/pull/75)); an error-feedback residual for Top-k + FP8 outer loops that beats the Top-5% baseline at 5.6× fewer bytes in the reproducible benchmark ([#63](https://github.com/xaviercallens/HiveMind/pull/63)), wired into the real worker upload path ([#69](https://github.com/xaviercallens/HiveMind/pull/69)).
+- **Routing & compression:** a 128-expert three-tier hierarchical router, 16 gating inner products per token instead of 128 ([#71](https://github.com/xaviercallens/HiveMind/pull/71)); token-tree speculative expert prefetch with a measured hit rate ([#75](https://github.com/xaviercallens/HiveMind/pull/75)); an error-feedback residual for Top-k + FP8 outer loops that beats the Top-5% baseline at 5.6× fewer bytes in the reproducible benchmark ([#63](https://github.com/xaviercallens/HiveMind/pull/63)), wired into the real worker upload path ([#69](https://github.com/xaviercallens/HiveMind/pull/69)).
 - **Serving & platform:** SSE streaming on `/v1/chat/completions` ([#6](https://github.com/xaviercallens/HiveMind/pull/6)); domain-expert LoRA adapters with a Top-k FP8 content-addressed registry ([#25](https://github.com/xaviercallens/HiveMind/pull/25)); native `steam_api64` bridge ([#10](https://github.com/xaviercallens/HiveMind/pull/10)); real WebGL 3D geo-ring HUD ([#42](https://github.com/xaviercallens/HiveMind/pull/42)).
 - **Protocol correctness:** TURN ChannelBind rewritten to RFC 5766 (client-chosen channel, implicit permission) ([#73](https://github.com/xaviercallens/HiveMind/pull/73)); federated workunits bound to their assignee so no node can consume another's job ([#72](https://github.com/xaviercallens/HiveMind/pull/72)).
 - **Keeping it honest:** repaired the project's CI after an import cycle silently stopped collection ([#67](https://github.com/xaviercallens/HiveMind/pull/67)); replaced unmeasured speedups, synthetic results labelled as real and self-reported scores with measured values or explicit "not measured" labels, each guarded by tests ([#64](https://github.com/xaviercallens/HiveMind/pull/64), [#65](https://github.com/xaviercallens/HiveMind/pull/65), [#74](https://github.com/xaviercallens/HiveMind/pull/74), [#76](https://github.com/xaviercallens/HiveMind/pull/76), [#77](https://github.com/xaviercallens/HiveMind/pull/77)).
@@ -43,7 +43,7 @@ An open-source framework that trains a community-owned Sparse Mixture-of-Experts
 
 - Proved prefix-trie speculative acceptance and RFC 9001 0-RTT bounds ([#21](https://github.com/xaviercallens/HiveMind/pull/21)).
 - Reworked theorems so they prove properties of the **actual** protocols rather than restating their assumptions, and made the audit pipeline refuse to report an unchecked proof as verified ([#39](https://github.com/xaviercallens/HiveMind/pull/39), [#41](https://github.com/xaviercallens/HiveMind/pull/41)).
-- In review ([#68](https://github.com/xaviercallens/HiveMind/pull/68)): the error-feedback update modelled in Lean with conservation for *any* compressor (including decay and clipping), the Top-k contraction rate `d·residual ≤ (d−k)·input`, bounded residuals under stale-step decay, and the deterministic half of the UCB1 bandit argument. All in core Lean, no Mathlib, because the upstream spec is deliberately dependency-free.
+- The error-feedback update modelled in Lean ([#68](https://github.com/xaviercallens/HiveMind/pull/68)) with conservation for *any* compressor (including decay and clipping), the Top-k contraction rate `d·residual ≤ (d−k)·input`, bounded residuals under stale-step decay, and the deterministic half of the UCB1 bandit argument. All in core Lean, no Mathlib, because the upstream spec is deliberately dependency-free.
 
 ### 📺 Shipped products — IN3RT1A apps for Windows and Linux
 
@@ -58,12 +58,12 @@ Free apps that get your PC and your TVs working together, published at **[payhip
 Two zero-dependency TypeScript + WebGL2 apps with strict types, lint, tests and a GitHub Pages deploy in CI. Open them and they run, no install.
 
 - **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Drop in a glTF/GLB model and it renders with PBR textures, clearcoat, sheen and refractive glass, lit by importance-sampled HDRIs with multiple importance sampling. An edge-aware denoiser and temporal reprojection keep it clean while you orbit; the glTF parser, BVH builder and integrator are all written from scratch. It works inside a GPU budget you choose, with Eco, Balanced, High and Max presets, a *Scan system* button that times your GPU and recommends one, and it stops once the image has converged. About 49 kB gzipped.
-- **[Synapse](https://github.com/clark719664/synapse)** ([live demo](https://clark719664.github.io/synapse/)): a zero-backend OpenTelemetry trace explorer. A live service map with requests flowing as particles, a span waterfall, import of OTLP/JSON, Jaeger and Zipkin traces, and a seeded 17-service simulator with four injectable incidents. About 21 kB gzipped.
+- **[Synapse](https://github.com/clark719664/synapse)** ([live demo](https://clark719664.github.io/synapse/)): a zero-backend trace explorer pointed at the real world. Live mode streams every edit on every Wikimedia wiki through the service map and onto a globe of edited places, with exact per-second history for the last hour and per-minute history for 24 hours from an always-on collector. Drop in your own OTLP/JSON, Jaeger or Zipkin traces, or run the built-in simulator. About 51 kB gzipped.
 
 ### ⭐ Stellar & Soroban
 
 - **[StellarCanary/Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary):** `getHealth` RPC method support in the compatibility checker ([#570](https://github.com/StellarCanary/Protocol-Canary/pull/570), merged).
-- **[CredenceOrg/Credence-Contracts](https://github.com/CredenceOrg/Credence-Contracts):** bounty-escrow contract entry points and paginated views in Rust/Soroban ([#1636](https://github.com/CredenceOrg/Credence-Contracts/pull/1636), in review).
+- **[CredenceOrg/Credence-Contracts](https://github.com/CredenceOrg/Credence-Contracts):** bounty-escrow contract entry points and paginated views in Rust/Soroban ([#1636](https://github.com/CredenceOrg/Credence-Contracts/pull/1636)).
 
 ---
 
