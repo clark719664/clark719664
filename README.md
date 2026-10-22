@@ -57,7 +57,7 @@ Free apps that get your PC and your TVs working together, published at **[payhip
 
 Two zero-dependency TypeScript + WebGL2 apps with strict types, lint, tests and a GitHub Pages deploy in CI. Open them and they run, no install.
 
-- **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Drop in a glTF/GLB model and it renders with PBR textures, clearcoat, sheen and refractive glass, lit by importance-sampled HDRIs with multiple importance sampling. An edge-aware denoiser and temporal reprojection keep it clean while you orbit; the glTF parser, BVH builder and integrator are all written from scratch. A GPU budget and a one-click system scan keep it from hogging your graphics card. About 49 kB gzipped.
+- **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Drop in a glTF/GLB model and it renders with PBR textures, clearcoat, sheen and refractive glass, lit by importance-sampled HDRIs with multiple importance sampling. An edge-aware denoiser and temporal reprojection keep it clean while you orbit; the glTF parser, BVH builder and integrator are all written from scratch. About 49 kB gzipped.
 - **[Synapse](https://github.com/clark719664/synapse)** ([live demo](https://clark719664.github.io/synapse/)): a zero-backend OpenTelemetry trace explorer. A live service map with requests flowing as particles, a span waterfall, import of OTLP/JSON, Jaeger and Zipkin traces, and a seeded 17-service simulator with four injectable incidents. About 21 kB gzipped.
 
 ### ⭐ Stellar & Soroban
