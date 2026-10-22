@@ -17,7 +17,7 @@
 
 | | |
 |---|---|
-| **Upstream pull requests** | **16 merged** (15 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570)) and **14 more in review**, all CI-green |
+| **Upstream pull requests** | **16 merged** (15 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570)) and **16 more in review** |
 | **Standing on HiveMind** | Named **code owner** for 11 subsystem paths and listed maintainer-track co-owner (*"Grandmaster Core & Formal Architect"*) in [GOVERNANCE.md](https://github.com/xaviercallens/HiveMind/blob/main/GOVERNANCE.md) |
 | **Formal verification** | Lean 4 proofs merged upstream; the spec now carries **77 machine-checked theorems** (0 `sorry`, 0 user axioms, audited in CI) |
 | **Shipped products** | **4 desktop apps** for Windows and Linux, released with checksums and bundled-tool sources on every build |
@@ -57,7 +57,7 @@ Free apps that get your PC and your TVs working together, published at **[payhip
 
 Two zero-dependency TypeScript + WebGL2 apps with strict types, lint, tests and a GitHub Pages deploy in CI. Open them and they run, no install.
 
-- **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Drop in a glTF/GLB model and it renders with PBR textures, clearcoat, sheen and refractive glass, lit by importance-sampled HDRIs with multiple importance sampling. An edge-aware denoiser and temporal reprojection keep it clean while you orbit; the glTF parser, BVH builder and integrator are all written from scratch. About 49 kB gzipped.
+- **[Lucent](https://github.com/clark719664/lucent)** ([live demo](https://clark719664.github.io/lucent/)): a real-time progressive path tracer on the GPU. Drop in a glTF/GLB model and it renders with PBR textures, clearcoat, sheen and refractive glass, lit by importance-sampled HDRIs with multiple importance sampling. An edge-aware denoiser and temporal reprojection keep it clean while you orbit; the glTF parser, BVH builder and integrator are all written from scratch. It works inside a GPU budget you choose, with Eco, Balanced, High and Max presets, a *Scan system* button that times your GPU and recommends one, and it stops once the image has converged. About 49 kB gzipped.
 - **[Synapse](https://github.com/clark719664/synapse)** ([live demo](https://clark719664.github.io/synapse/)): a zero-backend OpenTelemetry trace explorer. A live service map with requests flowing as particles, a span waterfall, import of OTLP/JSON, Jaeger and Zipkin traces, and a seeded 17-service simulator with four injectable incidents. About 21 kB gzipped.
 
 ### ⭐ Stellar & Soroban
