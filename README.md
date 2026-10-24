@@ -1,11 +1,11 @@
 <h1 align="center">Clark &nbsp;·&nbsp; IN3RT1A</h1>
 
-<p align="center"><b>Systems engineer. Distributed ML infrastructure, real-time networking, game technology, and Lean 4 formal verification.</b></p>
+<p align="center"><b>Systems engineer building networked apps, distributed ML infrastructure, game technology and reproducible reverse-engineering tools.</b></p>
 
 <p align="center">
-  <a href="https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664"><img alt="HiveMind PRs" src="https://img.shields.io/badge/HiveMind-29%20PRs%20%C2%B7%2015%20merged-1f6feb?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664"><img alt="HiveMind contributions" src="https://img.shields.io/badge/HiveMind-upstream%20contributions-1f6feb?style=for-the-badge&logo=github&logoColor=white"></a>
   <a href="https://github.com/xaviercallens/HiveMind/blob/main/lean4/HiveMindSpec.lean"><img alt="Lean 4" src="https://img.shields.io/badge/Lean%204-machine--checked%20proofs-6f42c1?style=for-the-badge"></a>
-  <a href="https://github.com/clark719664/pc-tv-apps/releases/latest"><img alt="Apps" src="https://img.shields.io/badge/IN3RT1A%20apps-Windows%20%2B%20Linux-2ea043?style=for-the-badge"></a>
+  <a href="https://github.com/clark719664/pc-tv-apps/releases/latest"><img alt="Apps" src="https://img.shields.io/badge/IN3RT1A%20apps-desktop%20%2B%20mobile%20beta-2ea043?style=for-the-badge"></a>
   <a href="https://payhip.com/IN3RT1A"><img alt="Payhip" src="https://img.shields.io/badge/Store-payhip.com%2FIN3RT1A-f5b700?style=for-the-badge"></a>
 </p>
 
@@ -17,12 +17,21 @@
 
 | | |
 |---|---|
-| **Upstream pull requests** | **32 merged** (30 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570), 1 on [Credence-Contracts](https://github.com/CredenceOrg/Credence-Contracts/pull/1636)) and **5 more in review** |
+| **Upstream pull requests** | **43 merged** (41 on [HiveMind](https://github.com/xaviercallens/HiveMind/pulls?q=is%3Apr+author%3Aclark719664+is%3Amerged), 1 on [Protocol-Canary](https://github.com/StellarCanary/Protocol-Canary/pull/570), 1 on [Credence-Contracts](https://github.com/CredenceOrg/Credence-Contracts/pull/1636)); verified 2026-10-23 |
 | **Standing on HiveMind** | Named **code owner** for 11 subsystem paths and listed maintainer-track co-owner (*"Grandmaster Core & Formal Architect"*) in [GOVERNANCE.md](https://github.com/xaviercallens/HiveMind/blob/main/GOVERNANCE.md) |
 | **Formal verification** | Lean 4 proofs merged upstream; the spec now carries **77 machine-checked theorems** (0 `sorry`, 0 user axioms, audited in CI) |
-| **Shipped products** | **4 desktop apps** for Windows and Linux, released with checksums and bundled-tool sources on every build |
+| **Shipped products** | **4 desktop apps** for Windows/Linux, plus [Android betas and a standalone mobile web app](https://github.com/clark719664/pc-tv-apps/releases/tag/mobile-v2026.10.23-beta1) |
 | **In the browser** | [Lucent](https://clark719664.github.io/lucent/), a GPU path tracer, and [Synapse](https://clark719664.github.io/synapse/), a trace explorer that watches every Wikimedia edit live, both live on GitHub Pages |
 | **Specialities** | QUIC 0-RTT · STUN/TURN · Mixture-of-Experts routing · FP8/INT4 kernels · error-feedback compression · Soroban smart contracts · Unreal 5 / Godot 4 |
+
+---
+
+## Latest releases
+
+- **[PC Cast and TV apps](https://github.com/clark719664/pc-tv-apps):** Windows and Linux desktop apps, a [new PC Cast Pro Windows release](https://github.com/clark719664/pc-tv-apps/releases/tag/v2026.10.23.1), plus [Android betas for TV Live and TV Remote](https://github.com/clark719664/pc-tv-apps/releases/tag/mobile-v2026.10.23-beta1) and a [standalone mobile Live web app](https://clark719664.github.io/pc-tv-apps/live/). Mobile versions have a smaller feature set; phone/TV compatibility remains beta.
+- **[Ruffle Portable States](https://github.com/clark719664/ruffle-portable-states):** a running AVM1 game saves, the producer exits, and a fresh process restores without replay. Continued state, trace and rendered commands match. [17 tests passed](https://github.com/clark719664/ruffle-portable-states/actions/runs/40045730753). Experimental sealed subset; arbitrary Flash games remain unsupported.
+- **[Godot Rollback Coherence](https://github.com/clark719664/godot-rollback-coherence):** collision-query ordering and dictionary-hash fixes for a real two-peer bomb game. [Both pinned Rapier versions pass](https://github.com/clark719664/godot-rollback-coherence/actions/runs/40045303203), with 240 confirmed states matching delayed peers and a zero-delay reference. [Results shared upstream](https://github.com/appsinacup/godot-rapier-physics/issues/534#issuecomment-6377957365); scope is the tested static-hitbox fixture.
+- **[Adobe Tone Lab](https://github.com/clark719664/adobe-tone-lab):** 140 real Adobe preview references, an account-free acquisition route and reproducible native-kernel experiments. [52 Python and eight Rust tests pass](https://github.com/clark719664/adobe-tone-lab/actions/runs/40047325928). [Research shared with RAWmakase](https://github.com/pch/rawmakase/discussions/621). No correction passed the acceptance criteria; Adobe-equivalent rendering remains unsolved.
 
 ---
 
@@ -45,13 +54,15 @@ An open-source framework that trains a community-owned Sparse Mixture-of-Experts
 - Reworked theorems so they prove properties of the **actual** protocols rather than restating their assumptions, and made the audit pipeline refuse to report an unchecked proof as verified ([#39](https://github.com/xaviercallens/HiveMind/pull/39), [#41](https://github.com/xaviercallens/HiveMind/pull/41)).
 - The error-feedback update modelled in Lean ([#68](https://github.com/xaviercallens/HiveMind/pull/68)) with conservation for *any* compressor (including decay and clipping), the Top-k contraction rate `d·residual ≤ (d−k)·input`, bounded residuals under stale-step decay, and the deterministic half of the UCB1 bandit argument. All in core Lean, no Mathlib, because the upstream spec is deliberately dependency-free.
 
-### 📺 Shipped products — IN3RT1A apps for Windows and Linux
+### 📺 Shipped products — IN3RT1A desktop apps and mobile betas
 
 Free apps that get your PC and your TVs working together, published at **[payhip.com/IN3RT1A](https://payhip.com/IN3RT1A)** with installers and Linux builds on **[pc-tv-apps](https://github.com/clark719664/pc-tv-apps)** and a home page at **[clark719664.github.io/pc-tv-apps](https://clark719664.github.io/pc-tv-apps/)**.
 
 - **PC Cast Pro:** TV remote, casting from any link or embedded player, multicast to many TVs at once, your PC's video library, multi-screen grids and free live TV in one app.
 - **PC Cast Lite:** the casting only. **PC TV Live:** free live TV by country with a guide, built on a documented legal-source filter. **PC TV Remote:** the remote only.
-- One-click Windows installers with no administrator rights needed, Linux tarballs with a one-command install and optional systemd service, SHA-256 checksums and the corresponding source for bundled GPL tools on every [release](https://github.com/clark719664/pc-tv-apps/releases/latest). No ads; [donations from $1](https://payhip.com/b/Wn9fE) keep them free.
+- One-click Windows installers with no administrator rights needed, Linux tarballs with a one-command install and optional systemd service, SHA-256 checksums and corresponding bundled-tool source on [releases](https://github.com/clark719664/pc-tv-apps/releases). The [2026.10.23.1 update](https://github.com/clark719664/pc-tv-apps/releases/tag/v2026.10.23.1) covers PC Cast Pro on Windows; the other desktop editions retain their preceding releases.
+- **Mobile beta:** standalone Android APKs for PC TV Live and PC TV Remote, plus a [Live web app](https://clark719664.github.io/pc-tv-apps/live/) usable in mobile Safari. These are smaller versions, not full PC Cast Pro/Lite ports. Downloads, checksums, build notes and current limits are on the [mobile beta release](https://github.com/clark719664/pc-tv-apps/releases/tag/mobile-v2026.10.23-beta1).
+- No ads; [donations from $1](https://payhip.com/b/Wn9fE) keep them free.
 
 ### 🌐 Live in the browser — Lucent and Synapse
 
@@ -79,6 +90,8 @@ Work that is private or not yet released. Ask if you want a walkthrough.
 ---
 
 ## How I work
+
+I use AI for coding, debugging and research, and publish the checks and limitations alongside the results.
 
 1. **Measured, labelled, or removed.** A benchmark is reproducible or it is not cited. A simulation is called a simulation.
 2. **Every fix ships with the test that would have caught it**, and a mutation check that the test actually fails without the fix.
