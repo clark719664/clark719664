@@ -71,7 +71,7 @@ Preserves 126 real Adobe DNG Converter previews plus 14 texture-control previews
 
 ## Open-source contribution forks
 
-These repositories are forks of other maintainers' projects. Contribution status below refers to linked upstream pull requests, not ownership of the upstream product. Status checked 24 October 2026.
+These repositories are forks of other maintainers' projects. Contribution status below refers to linked upstream pull requests, not ownership of the upstream product. Status checked 1 November 2026.
 
 ### HiveMind
 
@@ -93,11 +93,18 @@ Contributions span networking, GPU kernels, routing/compression, serving, and Le
 
 **[Credence-Contracts](https://github.com/clark719664/Credence-Contracts)** — Rust/Soroban bounty-escrow entry points and paginated views; [CredenceOrg #1636](https://github.com/CredenceOrg/Credence-Contracts/pull/1636), **merged**.
 
-**[FancyModLoader](https://github.com/clark719664/FancyModLoader)** — DebugFile appender fix for unavailable Netty native transport; [NeoForged #468](https://github.com/neoforged/FancyModLoader/pull/468), **open**.
+**[FancyModLoader](https://github.com/clark719664/FancyModLoader)** — DebugFile appender fix for unavailable Netty native transport; [NeoForged #468](https://github.com/neoforged/FancyModLoader/pull/468), **closed without review** (the maintainers closed all external PRs in a sweep on 31 October 2026).
 
 **[StellarGrantProtocol](https://github.com/clark719664/StellarGrantProtocol)** — Active-grant check in `swap_and_pay` ([#1350](https://github.com/PhasoraLabs/StellarGrantProtocol/pull/1350)) and rejection of quorum-failed proposals ([#1351](https://github.com/PhasoraLabs/StellarGrantProtocol/pull/1351)); both **closed without merge**.
 
-The dated audit found **46 merged upstream PRs** across the listed contribution work: 44 HiveMind + Protocol-Canary #570 + Credence #1636. Open and closed-unmerged submissions are excluded. Counts change; the linked PR records are the evidence.
+The dated audit found **48 merged upstream PRs** across the listed contribution work: 46 HiveMind + Protocol-Canary #570 + Credence #1636. Open and closed-unmerged submissions are excluded. Counts change; the linked PR records are the evidence.
+
+### Open pull requests (1 November 2026)
+
+- **[excalidraw](https://github.com/clark719664/excalidraw)** — arrow-type switching for bound and labeled arrows ([#12503](https://github.com/excalidraw/excalidraw/pull/12503)), stable canvas search results while editing ([#12504](https://github.com/excalidraw/excalidraw/pull/12504)), searchable shortcuts in the help dialog ([#12505](https://github.com/excalidraw/excalidraw/pull/12505)); all **open**.
+- **[highlight.js](https://github.com/clark719664/highlight.js)** — PHP one-line comments end at the closing `?>` ([#4572](https://github.com/highlightjs/highlight.js/pull/4572)); Ruby `Name::method` is a scope resolution, not a symbol ([#4573](https://github.com/highlightjs/highlight.js/pull/4573)); both **open**.
+- **[mermaid](https://github.com/clark719664/mermaid)** — esbuild plugin that strips chevrotain's unreachable `eval` from the minified bundles, removing a Firefox console warning ([#8649](https://github.com/mermaid-js/mermaid/pull/8649)); **open**.
+- **[vitest](https://github.com/clark719664/vitest)** and **[nuxt](https://github.com/clark719664/nuxt)** — verified fixes for seeded file-shuffle order (vitest #11340), watch mode after a config restart (vitest #11772) and the 100 ms navigation delay under view transitions (nuxt #36768) live on fork branches; the two submitted PRs were closed by an automated account check, not on technical review.
 
 ## Reference forks
 
