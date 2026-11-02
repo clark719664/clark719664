@@ -93,10 +93,6 @@ Contributions span networking, GPU kernels, routing/compression, serving, and Le
 
 **[Credence-Contracts](https://github.com/clark719664/Credence-Contracts)** — Rust/Soroban bounty-escrow entry points and paginated views; [CredenceOrg #1636](https://github.com/CredenceOrg/Credence-Contracts/pull/1636), **merged**.
 
-**[FancyModLoader](https://github.com/clark719664/FancyModLoader)** — DebugFile appender fix for unavailable Netty native transport; [NeoForged #468](https://github.com/neoforged/FancyModLoader/pull/468), **closed without review** (the maintainers closed all external PRs in a sweep on 31 October 2026).
-
-**[StellarGrantProtocol](https://github.com/clark719664/StellarGrantProtocol)** — Active-grant check in `swap_and_pay` ([#1350](https://github.com/PhasoraLabs/StellarGrantProtocol/pull/1350)) and rejection of quorum-failed proposals ([#1351](https://github.com/PhasoraLabs/StellarGrantProtocol/pull/1351)); both **closed without merge**.
-
 The dated audit found **48 merged upstream PRs** across the listed contribution work: 46 HiveMind + Protocol-Canary #570 + Credence #1636. Open and closed-unmerged submissions are excluded. Counts change; the linked PR records are the evidence.
 
 ### Open pull requests (1 November 2026)
@@ -105,11 +101,6 @@ The dated audit found **48 merged upstream PRs** across the listed contribution 
 - **[highlight.js](https://github.com/clark719664/highlight.js)** — PHP one-line comments end at the closing `?>` ([#4572](https://github.com/highlightjs/highlight.js/pull/4572)); Ruby `Name::method` is a scope resolution, not a symbol ([#4573](https://github.com/highlightjs/highlight.js/pull/4573)); both **open**.
 - **[mermaid](https://github.com/clark719664/mermaid)** — esbuild plugin that strips chevrotain's unreachable `eval` from the minified bundles, removing a Firefox console warning ([#8649](https://github.com/mermaid-js/mermaid/pull/8649)); **open**.
 - **[vitest](https://github.com/clark719664/vitest)** and **[nuxt](https://github.com/clark719664/nuxt)** — verified fixes for seeded file-shuffle order (vitest #11340), watch mode after a config restart (vitest #11772) and the 100 ms navigation delay under view transitions (nuxt #36768) live on fork branches; the two submitted PRs were closed by an automated account check, not on technical review.
-
-## Reference forks
-
-- **[lumina-backend](https://github.com/clark719664/lumina-backend)** — reference fork of [Lumeeena/lumina-backend](https://github.com/Lumeeena/lumina-backend), a Stellar indexer and GraphQL API. No authored upstream contribution is claimed here.
-- **[lumentix](https://github.com/clark719664/lumentix)** — reference fork of [LumenTix-HQ/lumentix](https://github.com/LumenTix-HQ/lumentix). No authored upstream contribution is claimed here.
 
 ## Profile repository
 
