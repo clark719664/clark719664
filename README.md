@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/clark719664/clark719664/main/assets/banner.svg" alt="Clark Langlois: software engineer who ships with Claude Code and Codex" width="100%">
+  <img src="https://raw.githubusercontent.com/clark719664/clark719664/main/assets/banner.svg" alt="Software engineer who ships with Claude Code and Codex" width="100%">
 </p>
 
 <p align="center">
@@ -7,8 +7,6 @@
   <a href="https://github.com/search?q=author%3Aclark719664+is%3Apr+is%3Amerged&type=pullrequests"><img alt="48 merged upstream PRs" src="https://img.shields.io/badge/merged%20upstream%20PRs-48-7dd3fc?style=for-the-badge"></a>
   <a href="https://payhip.com/IN3RT1A"><img alt="Apps by IN3RT1A" src="https://img.shields.io/badge/apps-IN3RT1A-a78bfa?style=for-the-badge"></a>
 </p>
-
-# Clark Langlois
 
 I build and ship software with **Claude Code** and **Codex** as my daily workflow. I set the direction, reproduce the problem, review every diff, and run the tests; the agents do the typing. Everything below is public and linked so you can check it.
 
